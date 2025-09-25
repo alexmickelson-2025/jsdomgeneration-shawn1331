@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Mukta&family=Roboto&family=Sofia+Sans+Condensed:wght@400;500&display=swap");
+
+:root {
+  --border-radius: 2em;
+  font-family: "Kanit", sans-serif;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 3em;
+  background-color: #d7e5ca;
+}
+
+nav {
+  width: 10em;
+  background-color: #8eaccd;
+}
+
+main {
+  background-color: #d2e0fb;
+  flex: 1;
+  padding-left: 8em;
+  padding-right: 8em;
+}
+
+footer {
+  height: 3em;
+  background-color: #f9f3cc;
+}
+
+footer ul {
+  text-align: center;
+}
+
+footer li {
+  display: inline-block;
+}
+
+.page-container {
+  display: flex; /* my children will obey flex rules */
+  flex-direction: row; /* my children will be laid out horizontally */
+  flex: 1;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /*As a child of another flex parent, I will grow.*/
+}
+
+h1 {
+  text-align: center;
+}
+
+.card-container {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(auto-fill, minmax(25em, 0));
+  justify-content: center;
+}
+
+.card {
+  border-radius: var(--border-radius);
+  border: 0.3em;
+  border-color: black;
+  border-style: solid;
+
+  max-width: 25em;
+  flex: 1;
+  margin: 1em;
+
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: nowrap; */
+}
+
+.card img {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  object-fit: cover;
+  max-height: 13em;
+}
+
+.card-text {
+  flex: 1;
+  padding: 1em;
+}
+
+
+/* Write mobile css here */
